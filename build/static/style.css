@@ -1,6 +1,6 @@
 body {
-    font-family: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5px 5px;
+    font-family: 'Arial', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px;
 }
 
 a {
@@ -13,8 +13,7 @@ a:hover {
 }
 
 header, footer, div.page {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
     background: #080a0a;
     padding: 20px 30px;
 }
@@ -24,6 +23,10 @@ header h1 {
     margin: 0;
     font-weight: normal;
     font-size: 42px;
+}
+
+header nav {
+    margin-top: 10px;
 }
 
 header nav ul {
