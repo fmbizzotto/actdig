@@ -1,0 +1,10 @@
+Nombre de proyecto: ACTDIG
+Nombre sugerido de web: Qubit
+
+Sitio web de blogging para pruebas.
+Generado estáticamente con Lektor.
+---
+## Tareas:
+- [ ] Integrar diseño responsivo con sistema de grilla
+- [ ] Limitar lista de blog, parece incluir todo el contenido de las entradas.
+- [ ] Integrar iconos
