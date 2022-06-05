@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 5px;
+}
+
+a {
+    color: #2a99b6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ce33df;
+}
+
+header, footer, div.page {
+    width: 900px;
+    margin: 0 auto;
+    background: #080a0a;
+    padding: 20px 30px;
+}
+
+header h1 {
+    color: #169bbd;
+    margin: 0;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0px 2px 0 0;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #169bbd;
+    border-radius: 7px;
+    background-color: rgb(49, 45, 45);
+}
+
+div.page {
+    background: #f1fbfe;
+}

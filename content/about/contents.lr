@@ -1,0 +1,8 @@
+title: Acerca de este CMS
+---
+body:
+
+Este sitio web ha sido generado estáticamente por el programa Lektor.
+La ventaja es que puede encontrarse hosting muy barato (gratis con GitHub Pages) y con mucha libertad aunque con mayor tiempo y desafíos.
+Cada solución integrada tendrá que ser programada manualmente puesto que dudo de la existencia de una gran variedad de plugins.
+WonderCMS será utilizado en proyecto paralelo para mantener dos hilos de desarrollo, al final solo un proyecto continuará.

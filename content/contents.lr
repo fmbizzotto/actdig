@@ -1,0 +1,27 @@
+title: Bienvenido a ACTDIG
+---
+body:
+
+Proyecto en desarrollo, con nombre clave para Activos Digitales.
+Se trata de un proyecto que busca acercar al usuario contenido de calidad informativo y herramientas para uso rápido y sencillo.
+
+<img src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing" width="150"/>
+
+## Título
+### Subtítulo
+Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
+- Elemento 1
+- Elemento 2
+- Elemento 3
+Este es un ejemplo de texto que da entrada a una lista numerada:
+1. Elemento 1
+2. Elemento 2
+3. Elemento 3
+Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de una manera muy sencilla.
+
+[nombre que quieres darle a tu enlace][nombre de tu referencia]
+[nombre de tu referencia]: http:www.tuenlace.com
+
+`Esto es una línea de código`
+
+`Y esta es otra`
