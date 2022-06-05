@@ -8,3 +8,6 @@ Generado estáticamente con Lektor.
 - [ ] Integrar diseño responsivo con sistema de grilla
 - [ ] Limitar lista de blog, parece incluir todo el contenido de las entradas.
 - [ ] Integrar iconos
+
+## Vista previa:
+[Clic aquí](https://fmbizzotto.github.io/actdig/build/)
