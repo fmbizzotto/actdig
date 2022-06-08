@@ -5,7 +5,8 @@ Sitio web de blogging para pruebas.
 Generado estáticamente con Lektor.
 ---
 ## Tareas:
-- [X] Integrar diseño responsivo con sistema de grilla
+- [X] Integrar diseño responsivo con sistema de grilla (Bootstrap)
+- [ ] Mejorar visibilidad de navbar en todos los tamaños de pantalla.
 - [ ] Limitar lista de blog, parece incluir todo el contenido de las entradas.
 - [ ] Integrar iconos
 
