@@ -2,10 +2,9 @@
     --color-de-fondo: rgb(248,248,248);
     --color-de-borde: rgb(220,220,220);
     --color-de-texto: black;
-    --color-de-link: black;
+    --color-de-nav-link: black;
     --color-de-link-hover: white;
-
-    --ancho-maximo: 1050px;
+    --color-de-titulo: black;
 }
 
 body {
@@ -20,6 +19,7 @@ header {
 div.page {
     padding: 0px 0px;
     background-color: var(--color-de-fondo);
+    min-height: 450px;
 }
 
 footer {
@@ -32,8 +32,8 @@ footer {
 /* Título */
 
 header h1 {
-    color: black;
-    margin: 0;
+    color: var(--color-de-titulo);
+    margin-top: 7px;
     font-weight: normal;
     font-size: 42px;
 }
@@ -59,26 +59,33 @@ header nav ul li a:hover {
 }
 
 a.nav-link {
-    color: var(--color-de-link);
+    color: var(--color-de-nav-link);
 }
 
 a.nav-link:hover {
     color: var(--color-de-link-hover);
 }
 
+/* Panel de Categorías */
+
 .categoria-card {
     background-color: white;
-    min-height: 180px;
+    min-height: 160px;
     border-style: dotted;
     border-color: var(--color-de-borde);
     border-width: 0px;
+    margin: 0%;
 }
 
 .categoria-card:hover {
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     color: var(--color-de-link-hover);
 }
 
 .categoria-card img {
     width: 100%;
+}
+
+.col-left {
+    text-align: center;
 }

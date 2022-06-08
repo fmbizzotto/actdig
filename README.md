@@ -6,9 +6,17 @@ Generado estáticamente con Lektor.
 ---
 ## Tareas:
 - [X] Integrar diseño responsivo con sistema de grilla (Bootstrap)
-- [ ] Mejorar visibilidad de navbar en todos los tamaños de pantalla.
+- [X] Mejorar visibilidad de navbar en todos los tamaños de pantalla.
 - [ ] Limitar lista de blog, parece incluir todo el contenido de las entradas.
-- [ ] Integrar iconos
+- [X] Integrar iconos.
+- [ ] Agregar link al logo e iso.
+- [ ] Agregar iso a la navbar.
+- [ ] Diseñar el footer como un indice largo de vínculos útiles.
+- [ ] Agregar metatags.
+- [ ] Integrar Google Analytics.
+- [ ] Arreglar sistema de títulos.
+- [ ] Investigar cómo implementar categorías y etiquetas en Lektor.
+- [ ] Agregar favicon.
 
 ## Vista previa:
 [Clic aquí](https://fmbizzotto.github.io/actdig/build/)
@@ -16,3 +24,4 @@ Generado estáticamente con Lektor.
 ## Nombres sugeridos:
 - Qubits
 - Esfera azul / blue sphere
+- Algo relacionado con la palabra silicio

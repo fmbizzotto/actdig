@@ -1,11 +1,11 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+  <link rel="stylesheet" href="../static/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <script src="https://kit.fontawesome.com/c26da7cdef.js" crossorigin="anonymous"></script>
-  <title>{% block title %}Welcome{% endblock %} — actdig</title>
+  <title>Recursos — actdig</title>
 </head>
 <body>
   <header>
@@ -17,16 +17,14 @@
         <div class="col">
           <nav class="navbar justify-content-end">
             <ul class="nav">
-              <li{% if this._path == '/' %} class="nav-item"{% endif
-                %}><a href="{{ '/'|url }}" class="nav-link">Inicio</a></li>
-              {% for href, title in [
-                ['/blog', 'Blog'],
-                ['/recursos', 'Recursos'],
-                ['/pinfo', '+Info']
-              ] %}
-                <li{% if this.is_child_of(href) %} class="nav-item"{% endif
-                  %}><a href="{{ href|url }}" class="nav-link">{{ title }}</a></li>
-              {% endfor %}
+              <li><a href="../" class="nav-link">Inicio</a></li>
+              
+                <li><a href="../blog/" class="nav-link">Blog</a></li>
+              
+                <li class="nav-item"><a href="./" class="nav-link">Recursos</a></li>
+              
+                <li><a href="../pinfo/" class="nav-link">+Info</a></li>
+              
             </ul>
           </nav>
         </div>
@@ -35,7 +33,16 @@
   </header>
   <div class="page">
     <div class="container-md">
-      {% block body %}{% endblock %}
+      
+  <!--<h2>Recursos</h2>-->
+  <p>Esta página estará dedicada a recursos digitales para ofrecer a los lectores. De esta manera se da valor al contenido, y por consiguiente, atrae mayores visitantes.</p>
+<ul>
+<li>Recurso 1</li>
+<li>Recurso 2</li>
+<li>Recurso 3</li>
+</ul>
+
+
     </div>
   </div>
   <footer>

@@ -1,36 +1,50 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../../static/style.css">
-<title>Hello Website 2 — actdig</title>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../static/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <script src="https://kit.fontawesome.com/c26da7cdef.js" crossorigin="anonymous"></script>
+  <title>Hello Website 2 — actdig</title>
+</head>
 <body>
   <header>
-    <h1>Qubits</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../../">Welcome</a></li>
-        
-          <li class="active"><a href="../">Blog</a></li>
-        
-          <li><a href="../../projects/">Projects</a></li>
-        
-          <li><a href="../../about/">About</a></li>
-        
-      </ul>
-    </nav>
+    <div class="container-md">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+          <h1>Qubits</h1>
+        </div>
+        <div class="col">
+          <nav class="navbar justify-content-end">
+            <ul class="nav">
+              <li><a href="../../" class="nav-link">Inicio</a></li>
+              
+                <li class="nav-item"><a href="../" class="nav-link">Blog</a></li>
+              
+                <li><a href="../../recursos/" class="nav-link">Recursos</a></li>
+              
+                <li><a href="../../pinfo/" class="nav-link">+Info</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="page">
-    
+    <div class="container-md">
+      
   
   <div class="blog-post">
   
     <h2>Hello Website 2</h2>
   
   <p class="meta">
-    written by
+    Escrito por 
     
       Franco Bizzotto
     
-    on 2022-06-05
+    el 2022-06-05
   </p>
   <p>This is an example blog post.  Not much here but that's not the point :)
 This is an example blog post.  Not much here but that's not the point :)
@@ -93,8 +107,11 @@ This is an example blog post.  Not much here but that's not the point :)</p>
   </div>
 
 
+    </div>
   </div>
   <footer>
-    &copy; Copyright 2022 by Franco Bizzotto.
+    <div class="container-md">
+      &copy; Copyright 2022 by Franco Bizzotto.
+    </div>
   </footer>
 </body>
