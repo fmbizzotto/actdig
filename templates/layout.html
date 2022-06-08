@@ -1,29 +1,44 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — actdig</title>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>{% block title %}Welcome{% endblock %} — actdig</title>
+</head>
 <body>
   <header>
-    <h1>Qubits</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-3">
+          <h1>Qubits</h1>
+        </div>
+        <div class="col">
+          <nav>
+            <ul class="nav justify-content-end">
+              <li{% if this._path == '/' %} class="nav-item"{% endif
+                %}><a href="{{ '/'|url }}" class="nav-link">Inicio</a></li>
+              {% for href, title in [
+                ['/blog', 'Blog'],
+                ['/projects', 'Projects'],
+                ['/about', 'About']
+              ] %}
+                <li{% if this.is_child_of(href) %} class="nav-item"{% endif
+                  %}><a href="{{ href|url }}" class="nav-link">{{ title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="page">
-    {% block body %}{% endblock %}
+    <div class="container-md">
+      {% block body %}{% endblock %}
+    </div>
   </div>
   <footer>
-    &copy; Copyright 2022 by Franco Bizzotto.
+    <div class="container-md">
+      &copy; Copyright 2022 by Franco Bizzotto.
+    </div>
   </footer>
 </body>

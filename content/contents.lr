@@ -1,11 +1,75 @@
-title: Bienvenido a ACTDIG
+title: Inicio
 ---
 body:
 
-Proyecto en desarrollo, con nombre clave para Activos Digitales.
-Se trata de un proyecto que busca acercar al usuario contenido de calidad informativo y herramientas para uso rápido y sencillo.
-
-<img src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing" width="150"/>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row row-cols-2 categoria-card align-items-center">
+            <div class="col col-left">
+                <img class="fluid-img" src="https://www.francobizzotto.com/assets/img/profile.jpg" alt="drawing"/>
+            </div>
+            <div class="col col-right">
+                <h3>Titulo</h3>
+                <p>Minidescripción</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Título
 ### Subtítulo
