@@ -8,8 +8,31 @@
 {% block body %}
 <div class="container">
   <div class="row">
-    <div class="col-lg-3 p-3" style="background-color: lightgray;">
-      <p>Aqui va una columna de filtros o algo asi</p>
+    <div id="panel" class="col-lg-3 p-3">
+      <div class="row row-cols-auto pb-3 border-bottom mb-3">
+        <div class="col align-self-end">
+          <h4><span class="lnr lnr-magnifier"></span> Búsqueda</h4>
+        </div>
+        <div class="col">
+          <form class="d-flex" role="search">
+            <input class="form-control me-1" type="search" placeholder="Entrada de blog..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <div class="row pb-3 mb-3">
+        {% set tags = site.query('/blog').distinct('tags') %}
+        {% if tags %}
+          <div class="tags">
+              <h4><span class="lnr lnr-tag"></span> Etiquetas</h4>
+              {% for tag in tags|sort %}
+                <a id="pill" class="btn badge fw-normal" href="{{ ('/blog@tag/' ~ tag.lower())|url }}">{{ tag }}</a>
+              {% else %}
+                <li><em>No items.</em></li>
+              {% endfor %}
+          </div>
+        {% endif %}
+      </div>
     </div>
     <div class="col-12 col-lg-9 px-0 order-lg-first">
       <div class="row row-cols-1 mx-0">

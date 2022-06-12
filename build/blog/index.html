@@ -1,6 +1,8 @@
 <!doctype html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -38,8 +40,53 @@
       
 <div class="container">
   <div class="row">
-    <div class="col-lg-3 p-3" style="background-color: lightgray;">
-      <p>Aqui va una columna de filtros o algo asi</p>
+    <div id="panel" class="col-lg-3 p-3">
+      <div class="row row-cols-auto pb-3 border-bottom mb-3">
+        <div class="col align-self-end">
+          <h4><span class="lnr lnr-magnifier"></span> Búsqueda</h4>
+        </div>
+        <div class="col">
+          <form class="d-flex" role="search">
+            <input class="form-control me-1" type="search" placeholder="Entrada de blog..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <div class="row pb-3 mb-3">
+        
+        
+          <div class="tags">
+              <h4><span class="lnr lnr-tag"></span> Etiquetas</h4>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/afiliados/">afiliados</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/alojamiento/">alojamiento</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/cms/">cms</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/content/">content</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/dinero/">dinero</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/entradas/">entradas</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/hardware/">hardware</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/hosting/">hosting</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/internet/">internet</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/joomla/">joomla</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/marketing/">marketing</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/prestashop/">prestashop</a>
+              
+                <a id="pill" class="btn badge fw-normal" href="tag/wordpress/">wordpress</a>
+              
+          </div>
+        
+      </div>
     </div>
     <div class="col-12 col-lg-9 px-0 order-lg-first">
       <div class="row row-cols-1 mx-0">
@@ -124,3 +171,4 @@
     </div>
   </footer>
 </body>
+</html>

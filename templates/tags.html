@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container">
+  <div class="row">
+    <div id="panel" class="col-lg-3 p-3">
+      <div class="row row-cols-auto pb-3 border-bottom mb-3">
+        <div class="col align-self-end">
+          <h4><span class="lnr lnr-magnifier"></span> Búsqueda</h4>
+        </div>
+        <div class="col">
+          <form class="d-flex" role="search">
+            <input class="form-control me-1" type="search" placeholder="Entrada de blog..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <div class="row pb-3 mb-3">
+        <div class="tags">
+          <h4><span class="lnr lnr-tag"></span> Etiquetas</h4>
+          <div class="btn-group">
+          <a id="pill-X" class="btn btn-danger badge fw-normal" href="/blog">X</a>
+          <a id="pill" class="btn badge fw-normal" href="#">{{ this.tag }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-9 px-0 order-lg-first">
+      <div class="row row-cols-1 mx-0">
+        {% for i in this.items %}
+          <div class="col border p-3">
+          <div class="blog-post">
+            <div class="row mb-2">
+              <div class="col">
+                <h3><a href="{{ i|url }}">{{ i.title }}</a></h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <a><img src="{{ i|url }}header-thmb.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-8">
+              <p class="meta">
+                <span class="lnr lnr-calendar-full"></span> {{ i.pub_date }}
+              </p>
+              <p>{{ i.description }}</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        {% endfor %}        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <p>Paginacion no disponible</p>
+  </div>
+</div>
+
+{% endblock %}

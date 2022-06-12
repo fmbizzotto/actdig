@@ -3,4 +3,23 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ render_blog_post(this) }}
+  <hr>
+  <br>
+  {% if this.tags %}
+  <div class="container">
+    <div class="row row-cols-auto justify-content-end">
+      <div class="col mb-1">
+        <h5 class="d-inline"><span class="lnr lnr-tag"></span> Etiquetas</h5>
+      </div>
+      <div class="col mb-1 text-end">
+        <ul class="d-inline">
+          {% for t in this.tags -%}
+              <a id="pill" class="btn badge fw-normal" href="{{ ('/blog@tag/' ~ t.lower())|url }}">{{ t }}</a>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+{% endif %}
 {% endblock %}
