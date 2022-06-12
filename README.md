@@ -9,7 +9,7 @@ Generado estáticamente con Lektor.
 - [X] Mejorar visibilidad de navbar en todos los tamaños de pantalla.
 - [X] Limitar lista de blog, parece incluir todo el contenido de las entradas.
 - [X] Integrar iconos.
-- [ ] Generar miniaturas automáticamente.
+- [X] Generar miniaturas automáticamente.
 - [ ] Agregar link al logo e iso.
 - [ ] Agregar iso a la navbar.
 - [ ] Diseñar el footer como un indice largo de vínculos útiles.

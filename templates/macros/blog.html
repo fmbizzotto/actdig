@@ -5,7 +5,7 @@
   {% else %}
     <h2>{{ post.title }}</h2>
   {% endif %}
-  <p class="meta fw-light">
+  <p class="meta fw-light fst-italic">
     Por 
     {% if post.twitter_handle %}
       <a href="https://twitter.com/{{ post.twitter_handle
@@ -13,9 +13,9 @@
     {% else %}
       {{ post.author }}
     {% endif %}
-    el {{ post.pub_date }}
+    , el {{ post.pub_date }}
   </p>
-  <img class="img-fluid" src="{{ post.picture }}">
+  <img class="img-fluid" src="{{ post|url }}header.jpg">
   {{ post.description }}
   {{ post.body }}
   </div>

@@ -1,2 +1,5 @@
 [project]
 name = Activos Digitales
+
+[packages]
+lektor-thumbnail-generator = 0.5.0
