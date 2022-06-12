@@ -1,11 +1,30 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+<!-- {% from "macros/blog.html" import render_blog_post %} -->
+{% from "macros/blogshort.html" import render_blog_post_short %}
 {% from "macros/pagination.html" import render_pagination %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}
+  {{ this.title }}
+{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
-
-  {{ render_pagination(this.pagination) }}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 p-3" style="background-color: lightgray;">
+      <p>Aqui va una columna de filtros o algo asi</p>
+    </div>
+    <div class="col-12 col-lg-9 px-0 order-lg-first">
+      <div class="row row-cols-1 mx-0">
+        {% for child in this.pagination.items %}
+          <div class="col border p-3">
+            {{ render_blog_post_short(child, from_index=true) }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div>
+      {{ render_pagination(this.pagination) }}
+    </div>
+  </div>
 {% endblock %}

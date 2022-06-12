@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Arial', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: var(--color-de-fondo);
 }
 
 header {
@@ -78,7 +79,7 @@ a.nav-link:hover {
 }
 
 .categoria-card:hover {
-    background-color: rgb(50, 50, 50);
+    background-color: black;
     color: var(--color-de-link-hover);
 }
 
@@ -88,4 +89,15 @@ a.nav-link:hover {
 
 .col-left {
     text-align: center;
+}
+
+/* Blog section */
+.blog-post h3 a {
+    color: var(--color-de-nav-link);
+    text-decoration: none;
+}
+
+.blog-post h3 a:hover {
+    color: var(--color-de-link-hover);
+    background-color: black;
 }

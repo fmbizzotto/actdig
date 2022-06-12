@@ -7,16 +7,18 @@ Generado estáticamente con Lektor.
 ## Tareas:
 - [X] Integrar diseño responsivo con sistema de grilla (Bootstrap)
 - [X] Mejorar visibilidad de navbar en todos los tamaños de pantalla.
-- [ ] Limitar lista de blog, parece incluir todo el contenido de las entradas.
+- [X] Limitar lista de blog, parece incluir todo el contenido de las entradas.
 - [X] Integrar iconos.
+- [ ] Generar miniaturas automáticamente.
 - [ ] Agregar link al logo e iso.
 - [ ] Agregar iso a la navbar.
 - [ ] Diseñar el footer como un indice largo de vínculos útiles.
 - [ ] Agregar metatags.
 - [ ] Integrar Google Analytics.
-- [ ] Arreglar sistema de títulos.
+- [X] Arreglar sistema de títulos.
 - [ ] Investigar cómo implementar categorías y etiquetas en Lektor.
 - [ ] Agregar favicon.
+- [ ] Arreglar la vista móvil.
 
 ## Vista previa:
 [Clic aquí](https://fmbizzotto.github.io/actdig/build/)

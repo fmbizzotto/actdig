@@ -1,15 +1,21 @@
 {% macro render_pagination(pagination) %}
-  <div class="pagination">
-    {% if pagination.has_prev %}
-      <a href="{{ pagination.prev|url }}">&laquo; Anterior</a>
-    {% else %}
-      <span class="disabled">&laquo; Anterior</span>
-    {% endif %}
-    | {{ pagination.page }} |
-    {% if pagination.has_next %}
-      <a href="{{ pagination.next|url }}">Siguiente &raquo;</a>
-    {% else %}
-      <span class="disabled">Siguiente &raquo;</span>
-    {% endif %}
+  <div class="pagination row text-center py-4">
+    <div class="col">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        {% if pagination.has_prev %}
+          <a href="{{ pagination.prev|url }}" class="btn btn-outline-dark"><i class="lnr lnr-chevron-left"></i> Anterior</a>
+        {% else %}
+          <span class="disabled btn"><i class="lnr lnr-chevron-left"></i> Anterior</span>
+        {% endif %}
+          <a src="#" class="disabled btn">
+           {{ pagination.page }}
+          </a>
+        {% if pagination.has_next %}
+          <a href="{{ pagination.next|url }}" class="btn btn-outline-dark">Siguiente <i class="lnr lnr-chevron-right"></i></a>
+        {% else %}
+          <span class="disabled btn">Siguiente <i class="lnr lnr-chevron-right"></i></span>
+        {% endif %}
+      </div>
+    </div>
   </div>
 {% endmacro %}
