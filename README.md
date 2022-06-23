@@ -13,15 +13,18 @@ Generado estáticamente con Lektor.
 - [X] Investigar cómo implementar categorías y etiquetas en Lektor.
 - [X] Arreglar sistema de títulos.
 - [X] Diseñar la página de tags.
+- [X] Arreglar la vista móvil.
 - [ ] Agregar funcionalidad de búsqueda.
 - [ ] Agregar indice y paginacion a pagina de tags.
-- [ ] Agregar link al logo e iso.
-- [ ] Agregar iso a la navbar.
+- [X] Agregar link al logo e iso.
+- [X] Agregar iso a la navbar.
 - [ ] Diseñar el footer como un indice largo de vínculos útiles.
 - [ ] Agregar metatags.
 - [ ] Integrar Google Analytics.
 - [ ] Agregar favicon.
-- [ ] Arreglar la vista móvil.
+- [ ] Agregar comentarios para el blog?
+- [ ] Diseñar página 404 de forma creativa.
+- [ ] Agregar sitemap automático
 
 ## Vista previa:
 [Clic aquí](https://fmbizzotto.github.io/actdig/build/)

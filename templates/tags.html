@@ -19,7 +19,7 @@
         <div class="tags">
           <h4><span class="lnr lnr-tag"></span> Etiquetas</h4>
           <div class="btn-group">
-          <a id="pill-X" class="btn btn-danger badge fw-normal" href="/blog">X</a>
+          <a id="pill-X" class="btn btn-danger badge fw-normal" href="../.." title="Quitar filtro"><span class="lnr lnr-cross"></span></a>
           <a id="pill" class="btn badge fw-normal" href="#">{{ this.tag }}</a>
           </div>
         </div>
@@ -40,7 +40,7 @@
               <a><img src="{{ i|url }}header-thmb.jpg" class="img-fluid"></a>
             </div>
             <div class="col-8">
-              <p class="meta">
+              <p class="meta mb-1">
                 <span class="lnr lnr-calendar-full"></span> {{ i.pub_date }}
               </p>
               <p>{{ i.description }}</p>
